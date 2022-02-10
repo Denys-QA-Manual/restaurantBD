@@ -1,0 +1,51 @@
+@import "vars";
+@import "blocks/helper";
+
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: @black;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Vendor --- */
+
+@import "vendor/slick";
+
+/* --- BLOCKs ---*/
+
+@import "blocks/container";
+@import "blocks/btn";
+@import "blocks/intro";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/welcome";
+@import "blocks/section";
+@import "blocks/feature";
+@import "blocks/about";
+@import "blocks/delivery";
+@import "blocks/dish";
+@import "blocks/stuff";
+@import "blocks/upcoming";
+@import "blocks/subscribe";
+@import "blocks/footer";

@@ -1,0 +1,170 @@
+// main: ../style.less
+
+.upcoming {
+    position: relative;
+    margin-bottom: 500px;
+}
+
+.upcoming__background {
+    
+    
+}
+
+.background {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.upcoming__button {
+    position: absolute;
+    top: 440px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &--inner {
+        position: relative;
+    }
+}
+
+.upcoming__circle {
+    border: 1px solid white;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &--1 {
+        width: 135px;
+        height: 135px;
+    }
+
+    &--2 {
+        width: 175px;
+        height: 175px;
+    }
+
+    &--3 {
+        width: 215px;
+        height: 215px;
+    }
+
+    &--4 {
+        width: 245px;
+        height: 245px;
+    }
+}
+
+.upcoming__event {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 285px;
+        height: 187px;
+        background: url("../img/upcoming/upconing__icon-1.png") no-repeat;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        content: "Kids Entry Free";
+        display: block;
+
+        font-size: 21px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        transform: rotate(-35deg);
+
+        position: absolute;
+        top: 65px;
+        left: 35px;
+    }
+}
+
+.upcoming__title {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: @red;
+    line-height: 1;
+    text-align: center;
+}
+
+.upcoming__text {
+    padding: 0 100px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: @gray;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    line-height: 2;
+}
+
+.upcoming__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 85px 100px;
+}
+
+.upcoming__brand {
+    width: 270px;
+
+    &--title {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        color: @red;
+        margin-bottom: 20px;
+    }
+
+    &--icon {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.brand--icon {
+
+}
+
+.upcoming__time {
+    line-height: 1;
+
+    &--title {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        color: @red;
+        margin-bottom: 20px;
+    }
+
+    &--time {
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        color: @black;
+        margin-bottom: 0px;
+        line-height: 2;
+    }
+
+    &--start {
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        color: @black;
+        margin-bottom: 0px;
+    }
+}

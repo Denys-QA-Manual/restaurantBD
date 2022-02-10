@@ -1,0 +1,65 @@
+// main: ../style.less
+
+.delivery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery__item {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    margin-right: 30px;
+    background: white;
+    padding: 80px 30px;
+
+    position: relative;
+}
+
+.delivery__title {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Lobster Two', cursive;
+    color: @red;
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.delivery__text {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: @gray;
+    text-align: center;
+}
+
+.delivery__icon {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100px;
+    height: 80px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s ease-in-out;
+    transition-delay: 0.1s;
+
+    &--photo {
+        width: 60px;
+        height: 60px;
+    }
+
+    &:hover {
+        transform: rotate(15deg);
+    }
+}

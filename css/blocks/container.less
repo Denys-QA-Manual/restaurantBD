@@ -1,0 +1,39 @@
+// main: ../style.less
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 2;
+
+    &--upcoming {
+        padding: 0 15px;
+        position: absolute;
+        bottom: -80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &--footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.container__header {
+    width: 100%;
+    max-width: 770px;
+    height: auto;
+}
+
+.container__intro {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+

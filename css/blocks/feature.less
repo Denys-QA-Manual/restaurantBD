@@ -1,0 +1,81 @@
+// main: ../style.less
+
+.feature {
+    padding: 0 75px;
+}
+
+.feature__slider {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.feature__dish {
+    margin-right: 30px;
+
+    &-last {
+        margin-right: 0;
+    }
+}
+
+.feature__item {
+    display: block;
+
+    &--pic {
+        width: 100%;
+        max-width: 270px;
+        height: auto;
+        transition: opacity 0.2s linear;
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}
+
+.feature__name {
+    display: block;
+    margin-top: 34px;
+    text-decoration: none;
+}
+
+.feature__title {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Lobster Two', cursive;
+    color: @black;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 10px;
+    transition: font-size 0.5s linear;
+    transition-delay: 0.3s;
+
+    &:hover {
+        font-size: 24.5px;
+    }
+
+}
+
+.feature__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &--new {
+        margin-left: 10px;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'Lobster Two', cursive;
+        color: @black;
+    }
+
+    &--old {
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Lobster Two', cursive;
+        color: @black;
+        text-decoration: line-through;
+    }
+}

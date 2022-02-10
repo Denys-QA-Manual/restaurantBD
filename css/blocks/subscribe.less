@@ -1,0 +1,57 @@
+// main: ../style.less
+
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe__left {
+    width: 100%;
+    max-width: 585px;
+
+    &--title {
+        font-size: 36px;
+        font-weight: 500;
+        font-family: 'Lobster Two', cursive;
+        color: white;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    &--icon {
+        margin-bottom: 50px;
+    }
+
+    &--text {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        line-height: 2;
+    }
+}
+
+.subscribe__right {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.subscribe__form { 
+    display: flex;
+    margin-top: 100px;
+}
+
+.subscribe__input {
+    width: 100%;
+    max-width: 410px;
+    height: 85px;
+    padding-left: 25px;
+
+    &::placeholder {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        color: @gray;
+    }
+}

@@ -1,0 +1,91 @@
+// main: ../style.less
+
+.about {
+    display: flex;
+}
+
+.about__left {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.about__text {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: @gray;
+}
+
+.about__accordion {
+    margin-top: 50px;
+    margin-left: 15px;
+
+    &--link {
+        position: relative;
+
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-text {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            color: @black;
+            line-height: 1.8;
+            cursor: pointer;
+
+            transition: color 0.1s ease;
+        }
+
+        &-sub {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+            color: @gray;
+            padding-left: 20px;
+            line-height: 1.8;
+        
+            display: none;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 7px;
+            height: 7px;
+            border-left: 2px solid @black;
+            border-bottom: 2px solid @black;
+            transform: rotate(-45deg);
+
+            position: absolute;
+            top: 5px;
+            left: 70%;
+            z-index: 1;
+        }
+
+        &.active &-sub {
+            display: block;
+        }
+
+        &.active &-text {
+            color: @blue;
+        }
+
+        &.active::after {
+            border-left-color: @blue;
+            border-bottom-color: @blue;
+            transform: rotate(135deg);
+            top: 8px;
+        }
+    }
+}
+
+.about__right {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+}
