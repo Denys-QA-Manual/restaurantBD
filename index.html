@@ -3,672 +3,912 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Sacramento|Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="daterangepicker/daterangepicker.css">
     <script src="https://kit.fontawesome.com/4ae53a2107.js"></script>
-    <title>Portfolio</title>
+    <title>Restaurant BD</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 <body>
 
-<!-- HEADER -->
-
-<header class="header">
-    <div class="container">
-        <div class="header__inner">
-            <div class="user">
-                <div class="user__avatar">
-                    <img src="img/intro/avatar.jpg" alt="">
-                </div>
-                <div class="user__content">
-                    <div class="user__name">Lewis <br> Nathaniel</div>
-                    <div class="user__prof">UI &amp; UX Designer</div>
-                </div>
-            </div>
-            <nav class="nav">
-                <a href="#" class="nav__link">work</a>
-                <a href="#" class="nav__link">about me</a>
-                <a href="#" class="nav__link">blog</a>
-                <a href="#" class="nav__link">contact</a>
-                <a href="#" class="nav__link nav__link--btn" data-modal="#modal_hire_me">hire me</a>
-            </nav>
-
-            <div class="burger">
-                <img class="burger__icon" src="img/burger.svg" alt="">
-            </div>
-        </div> <!-- /header__inner -->
-    </div>
-</header>
 
 <!-- INTRO -->
 
 <section class="intro">
-    <div class="container">
-        <div class="intro__inner">
-            <div class="intro__content">
-                <h2 class="intro__subtitle">Hello I'm</h2>
-                <h1 class="intro__title">Lewis Nathaniel</h1>
-                <div class="intro__text">UI &amp; UX Designer</div>
-
-                <div class="social">
-                    <a href="#" class="social__link">
-                        <img src="img/intro/Be.png" alt="Behance">
-                    </a>
-                    <a href="#" class="social__link">
-                        <img src="img/intro/Dribbble.png" alt="Dribbble">
-                    </a>
-                    <a href="#" class="social__link">
-                        <img src="img/intro/Fb.png" alt="Facebook">
-                    </a>
-                    <a href="#" class="social__link">
-                        <img src="img/intro/In.png" alt="In">
-                    </a>
-                    <a href="#" class="social__link">
-                        <img src="img/intro/Instagram.png" alt="Instagram">
-                    </a>
-                    <a href="#" class="social__link">
-                        <img src="img/intro/Twitter.png" alt="Twitter">
-                    </a>
+    <header class="header">
+        <div class="container">
+            <div class="header__welcome">
+                <p>Welcome To <a href="#" class="header__link red">restaurantBD.com</a></p>
+                <div class="header__search">
+                    <input class="header__input" type="search" name="search" id="search" placeholder="Quick Search">
+                    <button class="header__button" type="submit">
                 </div>
-                <a href="#" class="btn" data-modal="#modal_hire_me">Hire me</a>
-                <a href="#" class="btn" data-modal="#modal_resume">See my resume</a>
-            </div>
+                <div class="header__right">
+                    <a href="#" class="header__login">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <p class="header__login--item">Login</p>
+                    </a>
+                    <div class="header__contact">
+                        <p class="header__contact--item">
+                            For Delivery : 687 457 6587-90
+                        </p>
+                    </div>
+                </div> <!-- /header__right -->
+            </div> <!-- /header__welcome -->
+        </div> <!-- /container -->
+    </header>
 
-            <div class="intro__photo">
+    <div class="intro__menu">
+        <div class="container">
+            <div class="intro__menu--content">
+                <div class="intro__logo">
+                    <img class="intro__logo--icon" src="img/header/logo.png" alt="Логотип">
+                </div>
 
-            </div>
+                <div class="nav">
+                    <a href="#" class="nav__link">Home</a>
+                    <a href="#" class="nav__link">About</a>
+                    <a href="#" class="nav__link">Page</a>
+                    <a href="#" class="nav__link">Menu</a>
+                    <a href="#" class="nav__link">Gallery</a>
+                    <a href="#" class="nav__link">Blog</a>
+                    <a href="#" class="nav__link">Shops</a>
+                    <a href="#" class="nav__link">Contact</a>
+
+                    <a href="#" class="nav__shop">
+                        <img src="img/header/shop.png" alt="Корзина">
+                    </a>
+ 
+                    <a href="#" class="btn btn--header">Reservation</a>
+                </div> <!-- /nav -->
+            </div> <!-- /intro__menu--content -->
+        </div> <!-- /container -->
+    </div> <!-- /intro__menu -->
+
+    <div class="intro__content">
+        <div class="container__intro">
+
+        <h3 class="intro__title">
+            <p>RestaurantBD is the name of pure food</p>
+        </h3>
+        <h2 class="intro__bigtitle">
+            <p>We Provide 100% Pure & Healthy Food</p>
+        </h2>
+        <p class="intro__text">
+            when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book. It has survived not only
+            five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s.
+        </p>
+
+        <div class="intro__btn">
+            <a href="#" class="btn btn--intro">About Us</a>
+            <a href="#" class="btn btn--intro">See menu</a>
         </div>
-    </div>
+        </div> <!-- /container__intro -->
+    </div> <!-- /intro__content -->
 </section>
 
-<!-- Works -->
 
-<div class="works">
+<!-- WELCOME -->
+
+<section class="section--welcome">
     <div class="container">
-        <div class="works__nav">
-            <a href="#" class="works__nav--link" data-filter="all">All</a>
-            <a href="#" class="works__nav--link" data-filter="app">App</a>
-            <a href="#" class="works__nav--link" data-filter="website">Websites</a>
-            <a href="#" class="works__nav--link" data-filter="interaction">Interaction</a>
-        </div>
+        <div class="welcome">
+            <div class="welcome__left">
+                <div class="welcome__title">Welcome</div>
+                <div class="welcome__subtitle">To Our Restaurant</div>
+                <div class="welcome__logo">
+                    <img src="img/welcome/welcome__logo.png" alt="" class="welcome__icon">
+                </div>
+                <div class="welcome__text">
+                    <p>There are many variations of passages of Loretend to repeat predefined
+                        chunks as youm IInjected humour, or randomised words which don't look
+                        even slightly believable. If psum available, but the majority have
+                        suffered alteration in some form. 
+                    </p>
+                    <p>Injected humour, or randomised words which don't look evethe Internet tend
+                        to repeat predefined chunks as necessary, making this the first n slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to
+                        be sure there isn't tend to repeat predefined chunks as youon the Internet
+                        tend to repeat predefined chunks as necessary, making this the first true
+                        generator on the Internet.
+                    </p>
+                </div> <!-- /welcome__text -->
 
-        <div class="portfolio" id="portfolio">
-            <div class="portfolio__col" data-cat="app">
-                <div class="work" data-modal="#modal_project_1">
-                    <img class="work__img" src="img/works/bg.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">Category: app</div>
-                        <div class="work__title">Project title
-                            <time class="work__date" datetime="2019-26-11 19:00">2018</time> 
-                        </div>                      
-                    </div>               
+                <div class="welcome__sign">
+                    <div class="welcome__sign--name">Matthew T. Sloan</div>
+                    <div class="welcome__sign--prof">Founder & Owner</div>
                 </div>
-            </div>
-            <div class="portfolio__col" data-cat="website">
-                <div class="work">
-                    <img class="work__img" src="img/works/bg.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">Category: website</div>
-                        <div class="work__title">Project title
-                            <time class="work__date" datetime="2019-26-11 19:00">2018</time> 
-                        </div>             
-                    </div>          
-                </div>
-            </div>
-            <div class="portfolio__col" data-cat="app">
-                <div class="work">
-                    <img class="work__img" src="img/works/bg.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">Category: interaction</div>
-                        <div class="work__title">Project title
-                            <time class="work__date" datetime="2019-26-11 19:00">2018</time> 
-                        </div>                 
-                    </div>                   
-                </div>
-            </div>
-            <div class="portfolio__col" data-cat="interaction">
-                <div class="work">
-                    <img class="work__img" src="img/works/bg.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">Category: interaction</div>
-                        <div class="work__title">Project title
-                            <time class="work__date" datetime="2019-26-11 19:00">2018</time> 
-                        </div>                 
-                    </div>                   
-                </div>
-            </div>
-            <div class="portfolio__col" data-cat="website">
-                <div class="work">
-                    <img class="work__img" src="img/works/bg.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">Category: website</div>
-                        <div class="work__title">Project title
-                            <time class="work__date" datetime="2019-26-11 19:00">2018</time> 
-                        </div>                 
-                    </div>                   
-                </div>
-            </div>
-            <div class="portfolio__col" data-cat="app">
-                <div class="work">
-                    <img class="work__img" src="img/works/bg.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">Category: app</div>
-                        <div class="work__title">Project title
-                            <time class="work__date" datetime="2019-26-11 19:00">2018</time> 
-                        </div>                 
-                    </div>                   
-                </div>
-            </div>
-            <div class="portfolio__col" data-cat="website">
-                <div class="work">
-                    <img class="work__img" src="img/works/bg.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">Category: website</div>
-                        <div class="work__title">Project title
-                            <time class="work__date" datetime="2019-26-11 19:00">2018</time> 
-                        </div>                 
-                    </div>                   
-                </div>
-            </div>
-            <div class="portfolio__col" data-cat="interaction">
-                <div class="work">
-                    <img class="work__img" src="img/works/bg.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">Category: interaction</div>
-                        <div class="work__title">Project title
-                            <time class="work__date" datetime="2019-26-11 19:00">2018</time> 
-                        </div>                 
-                    </div>                   
-                </div>
-            </div>
-            <div class="portfolio__col" data-cat="app">
-                <div class="work">
-                    <img class="work__img" src="img/works/bg.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">Category: app</div>
-                        <div class="work__title">Project title
-                            <time class="work__date" datetime="2019-26-11 19:00">2018</time> 
-                        </div>                 
-                    </div>                   
-                </div>
-            </div>
-            
-        </div> <!-- /portfolio -->
+            </div> <!-- /welcome__left -->
 
-        <div class="text__center">
-            <a class="btn btn--small" href="">Load more work</a>
-        </div>
-    </div>
-</div>
-
-<!-- ABOUT -->
-
-<section class="about">
-    <div class="container">
-        <div class="about__inner">
-            <div class="about__photo">
-                <img class="img" src="img/about/about_photo.png" alt="">
-            </div>
-            <div class="about__content">
-                <h3 class="about__title">About me</h3>
-                <h2 class="about__bigtitle">Who am i?</h2>
-                <div class="about__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quasi praesentium impedit minus harum, cumque mollitia eaque
-                    sed atque veritatis enim asperiores perspiciatis deleniti
-                    voluptate laborum quod. Provident quos repellat molestias!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quasi praesentium impedit minus harum, cumque mollitia eaque
-                    sed atque veritatis enim asperiores perspiciatis deleniti
-                    voluptate laborum quod. Provident quos repellat molestias!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quasi praesentium impedit minus harum, cumque mollitia eaque
-                    sed atque veritatis enim asperiores perspiciatis deleniti
-                    voluptate laborum quod. Provident quos repellat molestias!</p>
+            <div class="welcome__right">
+                <div class="welcome__right--title">
+                    <img src="img/welcome/welcom__icon.png" alt="">
+                    <p class="welcome__right--text">Book Table</p>
+                    <img src="img/welcome/welcom__icon.png" alt="">
                 </div>
-                <a href="#" class="btn" data-modal="#modal_hire_me">Hire me</a>
-                <a href="#" class="btn" data-modal="#modal_resume">See my resume</a>
-            </div> <!-- /about__content -->
-        </div> <!-- /about__inner -->
+
+                <form action="/" class="welcome__form">
+                    
+                    <input type="text" id="name" class="welcome__input" placeholder="Your Name" spellcheck="false">
+
+                    <label for="people">
+                        <input type="number" id="people" min="1" max="250" class="welcome__input" placeholder="Total People">
+                        <div class="arrow__input"></div>
+                    </label>
+
+                    <label for="input__date">
+                        <input type="text" id="input__date" class="welcome__input" id="" placeholder="Date: 21/12/2019">
+                        <div class="arrow__input"></div>
+                    </label>
+
+                    <label for="input__time">
+                        <input type="text" id="input__time" class="welcome__input" placeholder="Time: 04:00 PM">
+                        <div class="arrow__input"></div>
+                    </label>
+
+                    <label for="input__table">
+                        <input type="number" id="input__table" min="1" max="18" class="welcome__input" placeholder="Table No">
+                        <div class="arrow__input"></div>
+                    </label>
+                </form>
+
+                <a href="#" class="btn btn--welcome">Book Now</a>
+                    
+                <div class="welcome--photo">
+                    
+                </div>
+            </div> <!-- /welcome__right    -->
+        </div> <!-- /welcome -->
+
     </div> <!-- /container -->
 </section>
 
-<!-- Reviews -->
 
-<div class="reviews">
-    <div class="container">
+<!-- FEATURE -->
 
-        <div class="reviews__item">
-            <div class="reviews__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repellat
-                veritatis ipsa architecto quibusdam esse, quia dolorem necessitatibus nobis
-                voluptates voluptatem ab laudantium quod. Fugit eum distinctio libero
-                perferendis eius?</p>
-            </div> <!-- /reviews__text -->
-
-                <div class="reviews__author">
-                    <img class="reviews__photo" src="https://placehold.it/103/333" alt="">
-                    <div class="reviews__name">Edward M. Brooks</div>
-                    <div class="reviews__company">Marketing house</div>
-                    <div class="reviews__rating">
-                        <img class="reviews__star" src="img/reviews/star.png" width="13" height="13" alt="">
-                        <img class="reviews__star" src="img/reviews/star.png" width="13" height="13" alt="">
-                        <img class="reviews__star" src="img/reviews/star.png" width="13" height="13" alt="">
-                        <img class="reviews__star" src="img/reviews/star.png" width="13" height="13" alt="">
-                        <img class="reviews__star reviews__star--unactive" src="img/reviews/star.png" width="13" height="13" alt="">
-
-                    </div>
-                </div>        
-        </div> <!-- /reviews__item -->
+<section class="section section--feature">
+    <div class="section__title">Our Restaurant Provide</div>
+    <div class="section__subtitle">Feature Item</div>
+    <div class="section__logo">
+        <img class="section__logo--icon" src="img/feature/feature__icon.png" alt="">
     </div>
-</div>
 
-<!-- NEWS -->
-<section class="news">
-    <div class="container">
-        <div class="news__header">
-            <h3 class="news__title">Read me</h3>
-            <div class="news__text">Sometimes i write something smart</div>
-        </div>
-
-        <div class="articles">
-            <div class="articles__col">
-                <div class="articles__item">
-                    <div class="articles__header">
-                        <time class="articles__date">
-                            10 <br> june
-                        </time>
-                        <a href="#">
-                        <img src="img/news/bg.jpg" alt="" class="articles__photo">
-                        </a>
-                    </div>
-                    <div class="articles__content">
-                        <h4 class="articles__title">
-                            <a href="#">TEN THE BEST APP IN 2017</a>
-                        </h4>
-                        <div class="articles__cet">CATEGORY</div>
-                        <div class="articles__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Maecenas pellentesque eu enim eget luctus. Sed augue felis, 
-                                facilisis et elementum vitae, aliquam sit amet ante. Sed
-                                iaculis eros sem, elementum consequat.</p>
+    <div class="feature">
+        <div class="feature__slider" data-slider="feature--slider">
+            <div>
+                <div class="feature__dish">
+                    <a class="feature__item" href="#">
+                        <img class="feature__item--pic" src="img/feature/feature__item-1.png" alt="">
+                    </a>
+                    <a class="feature__name" href="#">
+                        <div class="feature__title"> <p>Smokehouse Combo</p></div>
+                        <div class="feature__price">
+                            <div class="feature__price--new">8.50$</div>
+                            <div class="feature__price--old">10.60$</div>
                         </div>
-                    </div>
-                    <a href="" class="btn btn--small">Read more</a>
-                </div>  
+                    </a>
+                </div>
+            </div>
+            
+            <div>
+                <div class="feature__dish">
+                    <a class="feature__item" href="#">
+                        <img class="feature__item--pic" src="img/feature/feature__item-2.png" alt="">
+                    </a>
+                    <a class="feature__name" href="#">
+                        <div class="feature__title"> <p>Chiken Burger</p></div>
+                        <div class="feature__price">
+                            <div class="feature__price--new">6.50$</div>
+                            <div class="feature__price--old">8.60$</div>
+                        </div>
+                    </a>
+                </div>
             </div>
 
-            <div class="articles__col">
-                <div class="articles__item">
-                    <div class="articles__header">
-                        <time class="articles__date">
-                            10 <br> june
-                        </time>
-                        <a href="#">
-                        <img src="img/news/bg.jpg" alt="" class="articles__photo">
-                        </a>
-                    </div>
-                    <div class="articles__content">
-                        <h4 class="articles__title">
-                            <a href="#">TEN THE BEST APP IN 2017</a>
-                        </h4>
-                        <div class="articles__cet">CATEGORY</div>
-                        <div class="articles__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Maecenas pellentesque eu enim eget luctus. Sed augue felis, 
-                                facilisis et elementum vitae, aliquam sit amet ante. Sed
-                                iaculis eros sem, elementum consequat.</p>
+            <div>
+                <div class="feature__dish">
+                    <a class="feature__item" href="#">
+                        <img class="feature__item--pic" src="img/feature/feature__item-3.png" alt="">
+                    </a>
+                    <a class="feature__name" href="#">
+                        <div class="feature__title"> <p>Ribs & Stickes</p></div>
+                        <div class="feature__price">
+                            <div class="feature__price--new">11.80$</div>
+                            <div class="feature__price--old">16.00$</div>
                         </div>
-                    </div>
-                    <a href="" class="btn btn--small">Read more</a>
-                </div>  
+                    </a>
+                </div>
             </div>
 
-            <div class="articles__col">
-                <div class="articles__item">
-                    <div class="articles__header">
-                        <time class="articles__date">
-                            10 <br> june
-                        </time>
-                        <a href="#">
-                        <img src="img/news/bg.jpg" alt="" class="articles__photo">
-                        </a>
-                    </div>
-                    <div class="articles__content">
-                        <h4 class="articles__title">
-                            <a href="#">TEN THE BEST APP IN 2017</a>
-                        </h4>
-                        <div class="articles__cet">CATEGORY</div>
-                        <div class="articles__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Maecenas pellentesque eu enim eget luctus. Sed augue felis, 
-                                facilisis et elementum vitae, aliquam sit amet ante. Sed
-                                iaculis eros sem, elementum consequat.</p>
+            <div>
+                <div class="feature__dish">
+                    <a class="feature__item" href="#">
+                        <img class="feature__item--pic" src="img/feature/feature__item-4.png" alt="">
+                    </a>
+                    <a class="feature__name" href="#">
+                        <div class="feature__title"> <p>Chiken Crisper</p></div>
+                        <div class="feature__price">
+                            <div class="feature__price--new">9.50$</div>
+                            <div class="feature__price--old">11.80$</div>
                         </div>
-                    </div>
-                    <a href="" class="btn btn--small">Read more</a>
-                </div>  
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <div class="news__footer">
-            <a class="news__link" href="#">See more posts</a>
-        </div>
+            <div>
+                <div class="feature__dish">
+                    <a class="feature__item" href="#">
+                        <img class="feature__item--pic" src="img/feature/feature__item-5.png" alt="">
+                    </a>
+                    <a class="feature__name" href="#">
+                        <div class="feature__title"> <p>Chiken Sandwich</p></div>
+                        <div class="feature__price">
+                            <div class="feature__price--new">12.50$</div>
+                            <div class="feature__price--old">18.60$</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <div class="feature__dish feature__dish-last">
+                    <a class="feature__item" href="#">
+                        <img class="feature__item--pic" src="img/feature/feature__item-6.png" alt="">
+                    </a>
+                    <a class="feature__name" href="#">
+                        <div class="feature__title"> <p>Party Platter</p></div>
+                        <div class="feature__price">
+                            <div class="feature__price--new">21.50$</div>
+                            <div class="feature__price--old">28.60$</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div> <!-- /feature__slider -->
     </div>
 </section>
 
-<!-- Footer -->
-<footer class="footer">
+
+<!-- ABOUT US -->
+
+<section class="section section--about">
     <div class="container">
-        <div class="footer__inner">
-            <div class="footer_credits">
-                <div class="footer__copyright">
-                    &copy; 2018 UI43 - Free Templates
+        <div class="about">
+            <div class="about__left">
+                <div class="section__title section__title--about">We Provide Best Service</div>
+                <div class="section__subtitle section__subtitle--about">About Us</div>
+                <div class="section__logo section__logo--about">
+                    <img class="section__logo--icon" src="img/about/about__icon.png" alt="">
                 </div>
-                <div class="footer__social">
-                    <a href="#" target="_blank">
-                        <img src="img/footer/be.png" alt="">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="img/footer/dribbble.png" alt="">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="img/footer/fb.png" alt="">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="img/footer/in.png" alt="">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="img/footer/instagram.png" alt="">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="img/footer/twitter.png" alt="">
-                    </a>
 
+                <div class="about__text">
+                    <p>Injected humour, or randomised words which don't look evethe Internet tend to
+                    repeat predefined chunks as necessary, making this the first n slightly believable.
+                    If Lorem Ipsum, you need to be sure there isn't on the Internet tend to repeat
+                    predefined chunks as you are going to use a passage of Lorem Ipsum, you need to be
+                    sure there isn't on the Internet tend to repeat predefined chunks as necessary, 
+                    making this the first true generator on the Internet tend to repeat predefined
+                    chunks as you</p>
                 </div>
-            </div> <!-- /footer_credits -->
 
-            <nav class="footer__nav">
-                <a href="#" class="footer__nav--link">Work</a>
-                <a href="#" class="footer__nav--link">About me</a>
-                <a href="#" class="footer__nav--link">Blog</a>
-                <a href="#" class="footer__nav--link">Contact</a>
-                <a href="#" class="footer__nav--link footer__nav--link--btn" 
-                data-modal="#modal_hire_me">Hire me!</a>                
-            </nav>
+                <div class="about__accordion">
+                    <div class="about__accordion--link" data-collapse="#accordion-1">
+                        <p class="about__accordion--link-text">1. Our Restaurant provide best service ever to our customer</p>
+                        <div class="about__accordion--link-sub" id="accordion-1">
+                            Injected humour, or randomised words which don't look evethe Internet tend to repeat
+                            predefined chunks as necessary, making this the first n slightly believable.
+                        </div>
+                    </div>
 
+                    <div class="about__accordion--link" data-collapse="#accordion-1">
+                        <p class="about__accordion--link-text">2. We have best Restaurant food menu alltime</p>
+                        <div class="about__accordion--link-sub" id="accordion-1">
+                            Injected humour, or randomised words which don't look evethe Internet tend to repeat
+                            predefined chunks as necessary, making this the first n slightly believable. If Lorem
+                            Ipsum, you need to be sure there isn't on the Internet tend to repeat tend to repeat
+                            predefined chunks as you.
+                        </div>
+                    </div>
+
+                    <div class="about__accordion--link" data-collapse="#accordion-1">
+                        <p class="about__accordion--link-text">3. Our Restaurant provide Home Delivary service to our customer</p>
+                        <div class="about__accordion--link-sub" id="accordion-1">
+                            Injected humour, or randomised words which don't look evethe Internet tend to repeat
+                            predefined chunks as necessary, making this the first n slightly believable. If Lorem
+                            Ipsum, you need to be sure there isn't on the Internet tend to repeat tend to repeat
+                            predefined chunks as you. Injected humour, or randomised words which don't look evethe
+                            Internet tend to repeat predefined chunks as necessary, making this the first n slightly
+                            believable.
+                        </div>
+                    </div>
+
+                    <div class="about__accordion--link" data-collapse="#accordion-1">
+                        <p class="about__accordion--link-text">4. Restaurant Located nearby your destination</p>
+                        <div class="about__accordion--link-sub" id="accordion-1">
+                            Injected humour, or randomised words which don't look evethe Internet tend to repeat
+                            predefined chunks as necessary, making this the first n slightly believable. If Lorem
+                            Ipsum, you need to be sure there isn't on the Internet tend to repeat tend to repeat
+                            predefined chunks as you.
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /about__left -->
+    
+            <div class="about__right">
+                <img src="img/about/about-1.png" alt="" class="about__right--photo">
+            </div> <!-- /about__right --> 
+        </div> <!-- /about -->
+    </div> <!-- /container -->
+</section>
+
+<section class="section section--delivery">
+    <div class="section__title">3 Easy Steps To Get Home-Delivary</div>
+    <div class="section__subtitle section__subtitle--delivery">For Home Delivary</div>
+    <div class="section__logo">
+        <img class="section__logo--icon" src="img/delivery/delivery__icon.png" alt="">
+    </div>
+
+    <div class="container">
+        <div class="delivery">
+            <div class="delivery__item">
+                <div class="delivery__title">Select a Dish</div>
+                <div class="delivery__text">
+                    Internet tend to repeat predefined chunks as necessary, making this the
+                    first true on the Internet.
+                </div>
+
+                <div class="delivery__icon">
+                    <img class="delivery__icon--photo" src="img/delivery/delivery__icon-1.png" alt="">
+                </div>
+            </div> <!-- /delivery__item -->
+            <div class="delivery__item">
+                <div class="delivery__title">Online Payment</div>
+                <div class="delivery__text">
+                    Internet tend to repeat predefined chunks as necessary, making this the
+                    first true on the Internet.
+                </div>
+
+                <div class="delivery__icon">
+                    <img class="delivery__icon--photo" src="img/delivery/delivery__icon-2.png" alt="">
+                </div>
+            </div> <!-- /delivery__item -->
+            <div class="delivery__item">
+                <div class="delivery__title">Received Delivery</div>
+                <div class="delivery__text">
+                    Internet tend to repeat predefined chunks as necessary, making this the
+                    first true on the Internet.
+                </div>
+
+                <div class="delivery__icon">
+                    <img class="delivery__icon--photo" src="img/delivery/delivery__icon-3.png" alt="">
+                </div>
+            </div> <!-- /delivery__item -->
+        </div> <!-- /delivery -->
+    </div>
+</section>
+
+<section class="section section--dish">
+    <div class="container">
+        <div class="section__title">We Always Servie Teasty & Healthy Food </div>
+        <div class="section__subtitle">Main Dish</div>
+        <div class="section__logo">
+            <img class="section__logo--icon" src="img/dish/dish__icon.png" alt="">
         </div>
+
+        <div class="dish">
+            <div class="dish__nav">
+                <a href="#" class="dish__nav--link" data-filter="all">All</a>
+                <a href="#" class="dish__nav--link" data-filter="breakfast">Breakfast</a>
+                <a href="#" class="dish__nav--link" data-filter="lunch">Lunch</a>
+                <a href="#" class="dish__nav--link" data-filter="dinner">Dinner</a>
+                <a href="#" class="dish__nav--link" data-filter="Desert">Desert</a>
+                <a href="#" class="dish__nav--link" data-filter="kids">Kids Menu</a>
+            </div>
+
+            <div class="dish__menu">
+                <div class="dish__item" data-cat="lunch">
+                    <div class="dish__photo">
+                        <a href="#"><img class="dish__photo--icon" src="img/dish/dish__item-1.png" alt=""></a>
+                    </div>
+
+                    <div class="dish__text">
+                        <div class="dish__title">
+                            <a class="dish__name" href="#"><p class="dish__name--link">Chicken Burger</p></a>
+                            <div class="dish__dot">....................................................................</div>
+                            <div class="dish__price">10.50$</div>
+                        </div>
+                        <div class="dish__subtitle">
+                            <p>Internet tend to repeat predefined chunks as necessary,
+                            making this Internet.</p>
+                        </div>
+                    </div> <!-- /dish__text -->
+                    
+                </div> <!-- /dish__item -->
+
+                <div class="dish__item" data-cat="dinner">
+                    <div class="dish__photo">
+                        <a href="#"><img class="dish__photo--icon" src="img/dish/dish__item-2.png" alt=""></a>
+                    </div>
+
+                    <div class="dish__text">
+                        <div class="dish__title">
+                            <a class="dish__name" href="#"><p class="dish__name--link">Santa Fe Crispers</p></a>
+                            <div class="dish__dot">....................................................................</div>
+                            <div class="dish__price">12.50$</div>
+                        </div>
+                        <div class="dish__subtitle">
+                            <p>Internet tend to repeat predefined chunks as necessary,
+                            making this Internet.</p>
+                        </div>
+                    </div> <!-- /dish__text -->
+                    
+                </div> <!-- /dish__item -->
+
+                <div class="dish__item" data-cat="desert">
+                    <div class="dish__photo">
+                        <a href="#"><img class="dish__photo--icon" src="img/dish/dish__item-3.png" alt=""></a>
+                    </div>
+
+                    <div class="dish__text">
+                        <div class="dish__title">
+                            <a class="dish__name" href="#"><p class="dish__name--link">Triple Dipper</p></a>
+                            <div class="dish__dot">....................................................................</div>
+                            <div class="dish__price">8.90$</div>
+                        </div>
+                        <div class="dish__subtitle">
+                            <p>Internet tend to repeat predefined chunks as necessary,
+                            making this Internet.</p>
+                        </div>
+                    </div> <!-- /dish__text -->
+                    
+                </div> <!-- /dish__item -->
+
+                <div class="dish__item" data-cat="lunch">
+                    <div class="dish__photo">
+                        <a href="#"><img class="dish__photo--icon" src="img/dish/dish__item-4.png" alt=""></a>
+                    </div>
+
+                    <div class="dish__text">
+                        <div class="dish__title">
+                            <a class="dish__name" href="#"><p class="dish__name--link">Crispy Fiery</p></a>
+                            <div class="dish__dot">....................................................................</div>
+                            <div class="dish__price">6.90$</div>
+                        </div>
+                        <div class="dish__subtitle">
+                            <p>Internet tend to repeat predefined chunks as necessary,
+                            making this Internet.</p>
+                        </div>
+                    </div> <!-- /dish__text -->
+                    
+                </div> <!-- /dish__item -->
+                <div class="dish__item" data-cat="lunch">
+                    <div class="dish__photo">
+                        <a href="#"><img class="dish__photo--icon" src="img/dish/dish__item-5.png" alt=""></a>
+                    </div>
+
+                    <div class="dish__text">
+                        <div class="dish__title">
+                            <a class="dish__name" href="#"><p class="dish__name--link">Boneless Wings</p></a>
+                            <div class="dish__dot">....................................................................</div>
+                            <div class="dish__price">12.40$</div>
+                        </div>
+                        <div class="dish__subtitle">
+                            <p>Internet tend to repeat predefined chunks as necessary,
+                            making this Internet.</p>
+                        </div>
+                    </div> <!-- /dish__text -->
+                    
+                </div> <!-- /dish__item -->
+
+                <div class="dish__item" data-cat="breakfast">
+                    <div class="dish__photo">
+                        <a href="#"><img class="dish__photo--icon" src="img/dish/dish__item-6.png" alt=""></a>
+                    </div>
+
+                    <div class="dish__text">
+                        <div class="dish__title">
+                            <a class="dish__name" href="#"><p class="dish__name--link">Chicken Mex Bowl</p></a>
+                            <div class="dish__dot">....................................................................</div>
+                            <div class="dish__price">11.40$</div>
+                        </div>
+                        <div class="dish__subtitle">
+                            <p>Internet tend to repeat predefined chunks as necessary,
+                            making this Internet.</p>
+                        </div>
+                    </div> <!-- /dish__text -->
+                    
+                </div> <!-- /dish__item -->
+
+                <div class="dish__item" data-cat="dinner">
+                    <div class="dish__photo">
+                        <a href="#"><img class="dish__photo--icon" src="img/dish/dish__item-7.png" alt=""></a>
+                    </div>
+
+                    <div class="dish__text">
+                        <div class="dish__title">
+                            <a class="dish__name" href="#"><p class="dish__name--link">California Turkey</p></a>
+                            <div class="dish__dot">....................................................................</div>
+                            <div class="dish__price">14.50$</div>
+                        </div>
+                        <div class="dish__subtitle">
+                            <p>Internet tend to repeat predefined chunks as necessary,
+                            making this Internet.</p>
+                        </div>
+                    </div> <!-- /dish__text -->
+                    
+                </div> <!-- /dish__item -->
+
+                <div class="dish__item" data-cat="desert">
+                    <div class="dish__photo">
+                        <a href="#"><img class="dish__photo--icon" src="img/dish/dish__item-8.png" alt=""></a>
+                    </div>
+
+                    <div class="dish__text">
+                        <div class="dish__title">
+                            <a class="dish__name" href="#"><p class="dish__name--link">Pepper Pals</p></a>
+                            <div class="dish__dot">....................................................................</div>
+                            <div class="dish__price">14.50$</div>
+                        </div>
+                        <div class="dish__subtitle">
+                            <p>Internet tend to repeat predefined chunks as necessary,
+                            making this Internet.</p>
+                        </div>
+                    </div> <!-- /dish__text -->
+                    
+                </div> <!-- /dish__item -->
+
+                <div class="dish__item" data-cat="dinner">
+                    <div class="dish__photo">
+                        <a href="#"><img class="dish__photo--icon" src="img/dish/dish__item-9.png" alt=""></a>
+                    </div>
+
+                    <div class="dish__text">
+                        <div class="dish__title">
+                            <a class="dish__name" href="#"><p class="dish__name--link">House BBQ</p></a>
+                            <div class="dish__dot">....................................................................</div>
+                            <div class="dish__price">18.30$</div>
+                        </div>
+                        <div class="dish__subtitle">
+                            <p>Internet tend to repeat predefined chunks as necessary,
+                            making this Internet.</p>
+                        </div>
+                    </div> <!-- /dish__text -->
+                    
+                </div> <!-- /dish__item -->
+
+                <div class="dish__item" data-cat="desert">
+                    <div class="dish__photo">
+                        <a href="#"><img class="dish__photo--icon" src="img/dish/dish__item-10.png" alt=""></a>
+                    </div>
+
+                    <div class="dish__text">
+                        <div class="dish__title">
+                            <a class="dish__name" href="#"><p class="dish__name--link">Chocolate Cake</p></a>
+                            <div class="dish__dot">....................................................................</div>
+                            <div class="dish__price">13.30$</div>
+                        </div>
+                        <div class="dish__subtitle">
+                            <p>Internet tend to repeat predefined chunks as necessary,
+                            making this Internet.</p>
+                        </div>
+                    </div> <!-- /dish__text -->
+                    
+                </div> <!-- /dish__item -->
+            </div> <!-- /dish__menu -->
+
+            <a href="#" class="btn btn--dish">Full Menu</a>
+        </div> <!-- /dish -->
+    </div> <!-- /container -->
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="stuff">
+            <div class="section__title">We Have Awesome Team</div>
+            <div class="section__subtitle">Our Stuff</div>
+            <div class="section__logo">
+                <img class="section__logo--icon" src="img/stuff/stuff__icon.png" alt="">
+            </div>
+
+            <div class="stuff__slider">
+
+                <div class="stuff__item">
+                    <div class="stuff__item--header">
+                        <img src="img/stuff/stuff__item-1.png" alt="">
+
+                        <div class="header__social">
+                            <a class="header__social--item">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                            <a class="header__social--item">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div> <!-- /header__social -->
+                    </div> <!-- /stuff__item--header -->
+                    <div class="stuff__item--footer">
+                        <div class="stuff__name">Morgan M. Porter</div>
+                        <div class="stuff__prof">Head Chef</div>
+                        <div class="stuff__follow">
+                            <p>Follow:</p>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-google-plus-square"></i></a>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-pinterest-square"></i></a>
+                        </div>
+                    </div>
+                </div> <!-- /stuff__item -->
+
+                <div class="stuff__item">
+                    <div class="stuff__item--header">
+                        <img src="img/stuff/stuff__item-2.png" alt="">
+
+                        <div class="header__social">
+                            <a class="header__social--item">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                            <a class="header__social--item">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div> <!-- /header__social -->
+                    </div> <!-- /stuff__item--header -->
+                    <div class="stuff__item--footer">
+                        <div class="stuff__name">Katherine G. Wright</div>
+                        <div class="stuff__prof">Assistance Chef</div>
+                        <div class="stuff__follow">
+                            <p>Follow:</p>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-google-plus-square"></i></a>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-pinterest-square"></i></a>
+                        </div>
+                    </div>
+                </div> <!-- /stuff__item -->
+
+                <div class="stuff__item">
+                    <div class="stuff__item--header">
+                        <img src="img/stuff/stuff__item-3.png" alt="">
+
+                        <div class="header__social">
+                            <a class="header__social--item">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                            <a class="header__social--item">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div> <!-- /header__social -->
+                    </div> <!-- /stuff__item--header -->
+                    <div class="stuff__item--footer">
+                        <div class="stuff__name">Morgan Porter Jr.</div>
+                        <div class="stuff__prof">Chef & Founder</div>
+                        <div class="stuff__follow">
+                            <p>Follow:</p>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-google-plus-square"></i></a>
+                            <a href="#" class="stuff__follow--link"><i class="fab fa-pinterest-square"></i></a>
+                        </div>
+                    </div>
+                </div> <!-- /stuff__item -->
+
+                <div class="stuff__circle stuff__circle--top">
+                    <img class="circle circle--top" src="img/stuff/stuff__ball-1.png" alt="">
+                </div>
+
+                <div class="stuff__circle stuff__circle--bottom">
+                    <img class="circle circle--top" src="img/stuff/stuff__ball-2.png" alt="">
+                </div>
+            </div> <!-- /stuff__slider -->
+        </div> <!-- /stuff -->
+    </div> <!-- /container -->
+</section>
+
+<article class="upcoming">
+    <div class="upcoming__background">
+        <img src="img/upcoming/upconing__bg-1.png" alt="" class="background">
+    </div>
+
+    <div class="upcoming__button">
+        <div class="upcoming__button--inner">
+            <a class="upcoming__button--link" href="#">
+                <img class="upcoming__button--img" src="img/upcoming/upconing__btn.png" alt="">
+            </a>
+            <div class="upcoming__circle upcoming__circle--1"></div>
+            <div class="upcoming__circle upcoming__circle--2"></div>
+            <div class="upcoming__circle upcoming__circle--3"></div>
+            <div class="upcoming__circle upcoming__circle--4"></div>
+        </div> 
+    </div>
+
+    <div class="container container--upcoming">
+        <div class=" upcoming__event">
+            <div class="section__subtitle section__subtitle--upcoming">Upcoming Event</div>
+            <div class="section__logo">
+                <img class="section__logo--icon" src="img/upcoming/upconing__icon-2.png" alt="">
+            </div>
+
+            <div class="upcoming__title">
+                Packages and web page editors now use Lorem Ipsum
+            </div>
+
+            <div class="upcoming__text">
+                Injected humour, or randomised words which don't look evethe Internet tend to repeat
+                predefined chunks as necessary, making this the first n slightly believable. If Lorem
+                Ipsum, you need to be sure there isn't on the Internet tend to repeat predefined chunks
+                chunks as necessary, making this the first true generator on the Internet tend.
+            </div>
+
+            <div class="upcoming__footer">
+                <div class="upcoming__brand">
+                    <div class="upcoming__brand--title">
+                        Sponsered by:
+                    </div>
+                    <div class="upcoming__brand--icon">
+                        <img src="img/upcoming/upconing__brand-1.png" alt="" class="brand--icon">
+                        <img src="img/upcoming/upconing__brand-2.png" alt="" class="brand--icon">
+                        <img src="img/upcoming/upconing__brand-3.png" alt="" class="brand--icon">
+                        <img src="img/upcoming/upconing__brand-4.png" alt="" class="brand--icon">
+                    </div> <!-- /upcoming__brand--icon -->
+                </div> <!-- /upcoming__brand -->
+
+                <div class="upcoming__time">
+                    <div class="upcoming__time--title">Time & Date</div>
+                    <div class="upcoming__time--time">14 Februaty 2019</div>
+                    <div class="upcoming__time--start">Start From 4PM To Midnight</div>
+                </div>
+
+                <a class=" btn btn--upcoming">
+                    Buy Ticket
+                </a>  
+            </div> <!-- /upcoming__footer -->
+        </div> <!-- /container -->
+    </div> <!-- /upcoming__event -->
+</article>
+
+<section class="section section--subscribe">
+    <div class="container">
+        <div class="subscribe">
+            <div class="subscribe__left">
+                <div class="subscribe__left--title">
+                    Subscribe Nes Letter
+                </div>
+
+                <div class="subscribe__left--icon">
+                    <img src="img/subscribe/subscribe__icon-2.png" alt="" class="subscribe--icon">
+                </div>
+
+                <div class="subscribe__left--text">
+                    Injected humour, or randomised words which don't look evethe Internet
+                    tend to repeat predefined sure there isn't on the Internet tend to 
+                    repeat predefined chunks chunks as necessary, making this the first
+                    true generator o.
+                </div>
+                
+            </div> <!-- /subscribe__left -->
+
+            <div class="subscribe__right">
+                <form action="/" class="subscribe__form">
+                    <input type="text" class="subscribe__input"
+                    placeholder="Email Addres Here">
+                    <a class="btn--subscribe"></a>
+                </form>
+                
+            </div>
+        </div> <!-- /subscribe -->
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container container--footer">
+        <div class="footer__site">
+            <div class="footer__instagram">
+                <p class="footer__instagram--text">Instagram</p>
+
+                <div class="footer__photo">
+                    <div class="footer__photo--item">
+                        <img src="img/footer/footer__instagram-1.png" alt="">
+                    </div>
+                    <div class="footer__photo--item">
+                        <img src="img/footer/footer__instagram-2.png" alt="">
+                    </div>
+                    <div class="footer__photo--item">
+                        <img src="img/footer/footer__instagram-3.png" alt="">
+                    </div>
+                    <div class="footer__photo--item">
+                        <img src="img/footer/footer__instagram-4.png" alt="">
+                    </div>
+                    <div class="footer__photo--item">
+                        <img src="img/footer/footer__instagram-5.png" alt="">
+                    </div>
+                    <div class="footer__photo--item">
+                        <img src="img/footer/footer__instagram-6.png" alt="">
+                    </div>
+                </div> <!-- /footer__photo -->
+
+                <div class="footer__instagram--social">
+                    <a href="#" class="stuff__follow--link"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="stuff__follow--link"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#" class="stuff__follow--link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="stuff__follow--link"><i class="fab fa-google-plus-square"></i></a>
+                    <a href="#" class="stuff__follow--link"><i class="fab fa-pinterest-square"></i></a>
+                </div>
+            </div> <!-- /footer__instagram -->
+
+            <div class="footer__introduction">
+                <div class="footer__logo">
+                    <img src="img/footer/footer__logo.png" alt="">
+                </div>
+                <p class="footer__introduction--title">
+                    Introduction
+                </p>
+                <div class="footer__introduction--text">
+                    Injected humour, or randomised words which don't look evethe Internet tend to repeat
+                    predefi s as  chunks chunned sure there isn't on repeat predefined chunks chunks as
+                    chunks chunks as neces the first true generator o.
+                </div>
+            </div> <!-- /footer__introduction -->
+
+            <div class="footer__tag">
+                <p class="footer__tag--title">Tag</p>
+                <div class="footer__tags">
+                    <div class="footer__tags--item">
+                        Food
+                    </div>
+                    <div class="footer__tags--item">
+                        Rastaurant
+                    </div>
+                    <div class="footer__tags--item">
+                        Food Menu
+                    </div>
+                    <div class="footer__tags--item">
+                        RastaurantBD
+                    </div>
+                    <div class="footer__tags--item">
+                        PSD
+                    </div>
+                    <div class="footer__tags--item">
+                        UI/UX
+                    </div>
+                    <div class="footer__tags--item">
+                        Template
+                    </div>
+                </div> <!-- /footer__tags -->
+
+                <div class="footer__button">
+                    <form action="/" class="footer__form">
+                        <input type="text" class="footer__input"
+                        placeholder="Search Here">
+                        <a href="#" class="footer__btn"></a>
+                    </form>
+                </div>
+            </div> <!-- /footer__tag -->
+        </div> <!-- /footer__site -->
+        <div class="nav nav--footer">
+            <p class="footer__nav--text">Userful link:</p>
+
+            <a href="#" class="nav__link">Home</a>
+            <a href="#" class="nav__link">About</a>
+            <a href="#" class="nav__link">Page</a>
+            <a href="#" class="nav__link">Menu</a>
+            <a href="#" class="nav__link">Gallery</a>
+            <a href="#" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Shops</a>
+            <a href="#" class="nav__link">Contact</a>
+        </div> <!-- /nav -->
     </div>
 </footer>
-
-
-<!-- MODALS -->
-
-<div class="modal" id="modal_project_1">
-    <div class="modal__dialog">
-
-        <button type="button" class="modal__close" data-close>
-            <img src="img/modals/button__close.svg" alt="Close">
-        </button>
-
-        <div class="modal__work">
-            <div class="modal__work--preview">
-                <div data-slider="worksSlider">
-                    <div>
-                        <img class="modal__work--photo" 
-                        src="img/modals/white.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="modal__work--photo" 
-                        src="img/modals/gray.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="modal__work--photo" 
-                        src="img/modals/black.jpg" alt="">
-                    </div>
-                </div>        
-            </div>
-            <div class="modal__work--content">
-                <div class="modal__work--header">
-                    <h3 class="modal__work--title">Project title</h3>
-                    <div class="modal__work--info">
-                        category <span class="modal__work--info-divider">|</span> 2018
-                    </div>
-                </div>
-
-                <div class="modal__work--client">
-                    <div class="modal__work--client-title">Client:</div>
-                    <div class="modal__work--client-company">Creative Agency</div>
-                </div>
-
-                <div class="modal__work--text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Facilis maiores impedit, iste at nostrum atque
-                    laborum necessitatibus, deleniti id vitae, in est debitis
-                    blanditiis dolorem minima voluptatem? Soluta, voluptates
-                    rem?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                     elit. Facilis maiores impedit, iste at nostrum atque
-                    laborum necessitatibus, deleniti id vitae, in est debitis
-                    blanditiis dolorem minima voluptatem? Soluta, voluptates
-                    rem?</p>
-                </div>
-
-                <div class="modal__work--footer">
-                    <button type="button" class="modal__work--btn 
-                    slickPrev">
-                    <img src="img/modals/back.svg" height="12" alt="">
-                    Previous</button>
-                    <button type="button" class="modal__work--btn 
-                    slickNext">
-                    Next
-                    <img src="img/modals/next.svg"height="12" alt="">
-                    </button>
-                </div>
-               
-            </div> <!-- /modal__work--content -->
-        </div> <!-- /modal__work -->
-    </div>
-</div>
-
-<div class="modal" id="modal_resume">
-    <div class="modal__dialog">
-
-        <button type="button" class="modal__close" data-close>
-            <img src="img/modals/button__close.svg" alt="Close">
-        </button>
-
-        <div class="modal__content">
-            <h3 class="modal__title text__center">Resume</h3>
-
-            <div class="text__center">
-                <a href="#" class="btn btn--thin"> Download PDF</a>
-                <a href="#" class="btn btn--thin"> Print</a>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline__col timeline__col--left">
-                    <h4 class="timeline__title">EXPERIENCE</h4>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b> </time>
-                        <h5 class="timeline__subtitle">Freelancer</h5>
-                        <div class="timeline__position">Art Director</div>
-                        <div class="timeline__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Assumenda voluptate reprehenderit voluptatem ex, recusandae
-                                fugit tempora architecto dolor odio quas adipisci deserunt, 
-                                molestias delectus esse at, quibusdam ea maiores itaque.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2016 - 2017</time>
-                        <h5 class="timeline__subtitle">The Best Agency</h5>
-                        <div class="timeline__position">Art Director</div>
-                        <div class="timeline__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Assumenda voluptate reprehenderit voluptatem ex, recusandae
-                                fugit tempora architecto dolor odio quas adipisci deserunt, 
-                                molestias delectus esse at, quibusdam ea maiores itaque.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2014 - 2016</time>
-                        <h5 class="timeline__subtitle">Better Agency</h5>
-                        <div class="timeline__position">Senior UI/UX Designer</div>
-                        <div class="timeline__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Assumenda voluptate reprehenderit voluptatem ex, recusandae
-                                fugit tempora architecto dolor odio quas adipisci deserunt, 
-                                molestias delectus esse at, quibusdam ea maiores itaque.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="timeline__col timeline__col--rigth">
-                    <h4 class="timeline__title">EDUCATION</h4>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2015 - 2010</b> </time>
-                        <h5 class="timeline__subtitle">UI/UX Design</h5>
-                        <div class="timeline__position">LA University, USA</div>
-                    </div>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2002 - 2005</b> </time>
-                        <h5 class="timeline__subtitle">UI/UX Design</h5>
-                        <div class="timeline__position">LA Collage of Art, USA</div>
-                    </div>
-
-                    <h4 class="timeline__title">SKILLS</h4>
-
-                    <div class="progress__bar">
-                        <div class="progress__bar--item">
-                            <div class="progress__bar--left">
-                                <div class="progress__bar--title">UI/UX Design</div>
-                            </div>
-
-                            <div class="progress__bar--rigth">
-                                <div class="progress__bar--bar">
-                                    <div class="progress__bar--progress" 
-                                    style="width: 90%;"></div>
-                                </div>
-                            </div> <!-- /progress__bar--item -->
-                        </div> <!-- /progress__bar--item -->
-
-                        <div class="progress__bar--item">
-                            <div class="progress__bar--left">
-                                <div class="progress__bar--title">Illustrator</div>
-                            </div>
-    
-                            <div class="progress__bar--rigth">
-                                <div class="progress__bar--bar">
-                                    <div class="progress__bar--progress" 
-                                    style="width: 40%;"></div>
-                                </div>
-                            </div> <!-- /progress__bar--item -->
-                        </div> <!-- /progress__bar--item -->
-
-                        <div class="progress__bar--item">
-                            <div class="progress__bar--left">
-                                <div class="progress__bar--title">Photoshop</div>
-                            </div>
-        
-                            <div class="progress__bar--rigth">
-                                <div class="progress__bar--bar">
-                                    <div class="progress__bar--progress" 
-                                    style="width: 80%;"></div>
-                                </div>
-                            </div> <!-- /progress__bar--item -->
-                        </div> <!-- /progress__bar--item -->
-
-                        <div class="progress__bar--item">
-                            <div class="progress__bar--left">
-                                <div class="progress__bar--title">Sketch</div>
-                            </div>
-            
-                            <div class="progress__bar--rigth">
-                                <div class="progress__bar--bar">
-                                    <div class="progress__bar--progress" 
-                                    style="width: 50%;"></div>
-                                </div>
-                            </div> <!-- /progress__bar--item -->
-                        </div> <!-- /progress__bar--item -->
-                    </div> <!-- /progress__bar -->
-
-                    <h4 class="timeline__title">AWARDS</h4>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2010</b> </time>
-                        <h5 class="timeline__subtitle">UI/UX Design</h5>
-                        <div class="timeline__position">LA Collage of Art, USA</div>
-                        <div class="timeline__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Assumenda voluptate reprehenderit voluptatem ex, recusandae
-                                fugit tempora architecto dolor odio quas adipisci deserunt, 
-                                molestias delectus esse at, quibusdam ea maiores itaque.</p>
-                        </div>
-                    </div>
-                </div> <!-- /timeline__col -->
-            </div>
-
-            <div class="text__center">
-                <a href="#" class="btn">Hire me</a>
-            </div>
-        </div>
-        
-     </div> <!-- /modal__dialog -->
-</div>
-
-<div class="modal" id="modal_hire_me">
-    <div class="modal__dialog modal__dialog--sm">
-
-        <button type="button" class="modal__close" data-close>
-            <img src="img/modals/button__close.svg" alt="Close">
-        </button>
-
-        <div class="contact">
-            <div class="contact__left">
-                <h3 class="modal__title mb-0">Let's talk</h3>
-                <div class="modal__subtitle">Call me or send me a request</div>
-                <ul class="contact__info">
-                    <li class="contact__info--item">
-                        <img class="contact__info--icon" src="img/modals/phone.svg" alt="" width="14">
-                        (200) 100 3000 </li>
-                    <li class="contact__info--item"> 
-                        <img class="contact__info--icon" src="img/modals/mail.svg" alt="" width="14">
-                        designer@ui43.com </li>
-                </ul>
-
-                <form action="/" method="POST">
-                    <div class="form__group">
-                        <label class="label" for="input__email">Adress e-mail</label>
-                        <input id="input__email" name="input__email" type="text" class="input" placeholder="Adress e-mail">
-                    </div>
-                    <div class="form__group">
-                        <label class="label" name="input__text" for="input__text">Request</label>
-                        <textarea class="textarea" name="input__text" id="input__text"
-                        placeholder="Type your request"></textarea>
-                    </div>
-
-                    <div class="text__right">
-                        <button class="btn">SEND</button>
-                    </div>
-
-                </form>
-            </div>
-            
-        </div> <!-- /contact -->
-
-        
-     </div> <!-- /modal__dialog -->
-</div>
 
 <!-- JS -->
 <script src="js/slick.min.js"></script>
 <script src="js/app.js"></script>
+<script src="daterangepicker/moment.js"></script>
+<script src="daterangepicker/daterangepicker.js"></script>
 
 </body>
 </html>
